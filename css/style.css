@@ -123,8 +123,8 @@ a {
   width: 25px;
   height: 25px;
   margin: 0 30px;
+  cursor: pointer;
 }
-
 .main-nav img {
   width: 140px;
   height: 46px;
@@ -410,15 +410,15 @@ a {
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .grid-custom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .grid-custom > div {
-    width: 50%;
+    width: 300px;
   }
 }
 
