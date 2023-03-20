@@ -230,6 +230,19 @@ a {
   border-radius: 100%;
 }
 
+.carousel-caption {
+  top: 30%;
+}
+
+.first-slider h5,
+.second-slider h5,
+.third-slider h5 {
+  color: #ff3131;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .carousel-inner img {
   width: 100%;
   height: calc(100vh - 125px);
