@@ -401,7 +401,7 @@ a {
 
 .info {
   color: #ffffff;
-  background-image: url(/assets/bckg-4.jpg);
+  background-image: url(../assets/bckg-4.jpg);
   /* min-height: 380px; */
   background-repeat: no-repeat;
   background-size: cover;
