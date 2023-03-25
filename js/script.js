@@ -2,10 +2,8 @@ const toggleElement = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const responsiveMenu = document.querySelector(".responsive-menu");
 const close = document.querySelector(".close-btn");
-const pOne = document.querySelector(".p-one");
-const pTwo = document.querySelector(".p-two");
-const pThree = document.querySelector(".p-three");
-const collapseContent = document.querySelector(".collapse-content");
+
+let app = document.getElementById("app");
 
 // hamburger menu
 toggleElement.addEventListener("click", () => {
@@ -19,25 +17,68 @@ close.addEventListener("click", () => {
   responsiveMenu.classList.toggle("active");
 });
 
-// collapse
-pOne.addEventListener("click", () => {
-  collapseContent.innerHTML =
-    "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان";
-  pTwo.classList.remove("active");
-  pThree.classList.remove("active");
-  pOne.classList.add("active");
+// TypeWritter
+
+let typewriter = new Typewriter(app, {
+  loop: true,
 });
-pTwo.addEventListener("click", () => {
-  collapseContent.innerHTML =
-    "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابها شناخت فراوان";
-  pTwo.classList.add("active");
-  pThree.classList.remove("active");
-  pOne.classList.remove("active");
+
+typewriter
+  .typeString("تایتل اول")
+  .pauseFor(1500)
+  .deleteAll()
+  .typeString("تایتل دوم")
+  .pauseFor(1500)
+  .deleteAll()
+  .typeString("تایتل سوم")
+  .pauseFor(1500)
+  .start();
+
+//swipper
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-pThree.addEventListener("click", () => {
-  collapseContent.innerHTML =
-    "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان";
-  pTwo.classList.remove("active");
-  pThree.classList.add("active");
-  pOne.classList.remove("active");
+
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    900: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+
+    1000: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
 });
