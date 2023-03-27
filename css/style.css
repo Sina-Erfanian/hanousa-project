@@ -345,7 +345,7 @@ a {
 .grid-custom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 130px);
+  grid-template-rows: repeat(4, 140px);
   gap: 30px;
   text-align: right;
 }
