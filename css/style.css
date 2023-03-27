@@ -399,6 +399,7 @@ a {
   border-color: rgba(0, 0, 0, 0.125);
 }
 
+/* Info Section */
 .info {
   color: #ffffff;
   background-image: url(../assets/bckg-4.jpg);
@@ -435,6 +436,7 @@ a {
   padding: 0 70px 140px;
 }
 
+/* Company Section */
 .company-services {
   margin-top: 100px;
 }
@@ -493,6 +495,7 @@ a {
   border-top: 2px solid #e04834 !important;
 }
 
+/* comments section */
 .comments {
   background-color: #c24739;
   margin: 100px 0;
@@ -572,6 +575,7 @@ a {
   background-color: #fff;
 }
 
+/* Details */
 .iphone-img {
   width: 100%;
   height: auto;
@@ -625,6 +629,7 @@ a {
   border: 1px solid #e66969;
 }
 
+/* Partner Section */
 .partner-section {
   background-image: url(../assets/background-white-85.svg);
   background-color: #d0bdbd;
@@ -667,6 +672,7 @@ a {
   padding: 0 100px;
 }
 
+/* Footer */
 .footer {
   background-color: #1d2733;
   overflow: hidden;
