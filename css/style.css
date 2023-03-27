@@ -175,7 +175,7 @@ a {
   position: fixed;
   background-color: rgb(245, 228, 228);
   left: -300%;
-  z-index: 999;
+  z-index: 99999999;
   height: 100vh;
   transition: 0.5s ease;
   max-width: 300px;
@@ -183,6 +183,7 @@ a {
   border-radius: 5px;
   overflow-y: scroll;
   direction: rtl;
+  top: 0;
 }
 
 .responsive-menu span {
@@ -204,6 +205,19 @@ a {
 .responsive-menu input {
   margin: 49px 0 15px 0;
   padding: 7px;
+}
+
+.accordion-button::after {
+  position: absolute;
+  left: 0;
+}
+
+.responsive-menu .accordion-header button {
+  font-size: 15px;
+}
+
+.responsive-menu .accordion-body a {
+  font-size: 14px;
 }
 /* Slider */
 .custom-slider,
@@ -445,6 +459,11 @@ a {
   text-align: center;
 }
 
+.service-tab-pane {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .company-services .header-services h4 {
   color: #707070;
   font-size: 33px;
@@ -621,7 +640,10 @@ a {
 }
 
 .details-tabs {
+  direction: rtl;
   padding: 30px 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .details-container .nav-tabs .nav-item.show .nav-link,
@@ -837,6 +859,9 @@ a {
   .top-nav {
     flex-direction: column;
   }
+  .top-nav .svg-container {
+    display: none;
+  }
   .svg-container {
     margin-bottom: 10px;
   }
@@ -885,6 +910,10 @@ a {
 
   .copyright {
     flex-direction: column;
+  }
+
+  .sub-footer {
+    padding-bottom: 20px;
   }
 
   .iphone-img {
@@ -946,5 +975,10 @@ a {
 
   .carousel-inner img {
     height: 240px;
+  }
+
+  .iframe-map iframe {
+    width: 320px;
+    height: 320px;
   }
 }
