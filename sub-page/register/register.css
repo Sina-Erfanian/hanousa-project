@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #faf1f1;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 768px;
+  min-height: 500px;
+  display: flex;
+  padding: 10px 50px;
+}
+
+.left-side {
+  flex-basis: 50%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #303030;
+}
+
+.right-side {
+  flex-basis: 50%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #c24336;
+  box-shadow: -19px 7px 17px 8px #00000040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.right-side h1 {
+  padding: 0 10px;
+}
+
+.left-side h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 5px;
+}
+
+.icon-register {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.icon-register img {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.left-side p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 5px;
+  font-weight: 800;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  gap: 15px;
+}
+
+.input-wrapper input {
+  box-shadow: 0px 0px 11px 0px #0000008c inset;
+  border: none;
+  outline: none;
+  padding: 13px;
+  border-radius: 14px;
+  direction: rtl;
+  background: #eef4fa;
+}
+.input-wrapper input::placeholder {
+  font-size: 15px;
+  color: #352f2f;
+  font-weight: 400;
+}
+
+.btn {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.btn button {
+  background: #255b96;
+  color: #fff;
+  padding: 10px 37px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .right-side {
+    box-shadow: none;
+  }
+
+  .input-wrapper {
+    padding: 10px 20px;
+  }
+
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+  .wrapper {
+    width: 429px;
+  }
+}
