@@ -38,6 +38,7 @@ body {
 
 .right-side h1 {
   padding: 0 10px;
+  text-align: center;
 }
 
 .left-side h3 {
@@ -109,28 +110,25 @@ body {
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .right-side {
-    box-shadow: none;
-  }
-
   .input-wrapper {
     padding: 10px 20px;
   }
 
   .right-side {
-    display: none;
+    flex-basis: 40%;
   }
   .left-side {
-    border-radius: 10px;
+    flex-basis: 60%;
   }
-}
 
-@media (min-width: 520px) and (max-width: 768px) {
   .wrapper {
-    width: 429px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .icon-register img {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
   }
 }

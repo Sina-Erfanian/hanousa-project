@@ -89,11 +89,12 @@ body {
 
 @media (max-width: 768px) {
   .wrapper {
-    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
   }
 
   .right-side {
-    box-shadow: none;
+    flex-basis: 60%;
   }
 
   .input-wrapper {
@@ -101,15 +102,8 @@ body {
   }
 
   .left-side {
-    display: none;
-  }
-  .right-side {
-    border-radius: 10px;
-  }
-}
-
-@media (min-width: 520px) and (max-width: 768px) {
-  .wrapper {
-    width: 429px;
+    flex-basis: 40%;
+    padding: 0 9px;
+    text-align: center;
   }
 }

@@ -97,28 +97,25 @@ body {
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .right-side {
-    box-shadow: none;
-  }
-
   .input-wrapper {
     padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .left-side h1 {
+    padding: 0 30px;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0;
   }
 
   .left-side {
-    display: none;
+    flex-basis: 40%;
   }
-  .right-side {
-    border-radius: 10px;
-  }
-}
 
-@media (min-width: 520px) and (max-width: 768px) {
-  .wrapper {
-    width: 429px;
+  .right-side {
+    flex-basis: 60%;
   }
 }
